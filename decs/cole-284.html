@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport"/>
+<meta aframe-injected="" content="yes" name="mobile-web-app-capable"/>
+<meta aframe-injected="" content="black" name="theme-color"/>
+<script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+<script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+<script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+</head>
+<body style="margin: 0px 0px 0px -293.5px; overflow: hidden; width: 697.333px; height: 523px;">
+<!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
+<a-scene arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;" embedded="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="enabled: false">
+<a-assets>
+<a-asset-item id="animated-asset" src="../models/cole-284.gltf"></a-asset-item>
+</a-assets>
+<a-marker arjs-anchor="" arjs-hit-testing="" id="animated-marker" material="" type="barcode" value="6">
+<a-entity animation-mixer="" gltf-model="#animated-asset" scale="2 2 2">
+</a-entity>
+</a-marker>
+<a-entity camera=""></a-entity>
+<canvas class="a-canvas" data-aframe-canvas="true" height="1569" width="2091"></canvas><div class="a-loader-title" style="display: none;"></div><a-entity aframe-injected="" data-aframe-default-light="" light=""></a-entity><a-entity aframe-injected="" data-aframe-default-light="" light="" position=""></a-entity></a-scene>
+<video autoplay="" id="arjs-video" muted="" playsinline="" style="width: 697.333px; height: 523px; position: absolute; top: 0px; left: 0px; z-index: -2; margin-left: -293.667px; margin-top: 0px;"></video>
+</body>
+</html>
